@@ -41,7 +41,7 @@ async function getBooksAndMoviesAsync(){
     };
   }
   catch(error){
-    console.error('Error fetching books and movies',error);
+    console.log('Error fetching books and movies',error);
   }
 }
 
