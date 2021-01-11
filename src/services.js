@@ -43,22 +43,14 @@ export async function asyncFetchBooks(){
 }
 
 getBooksAndMoviesAsync()
-.then(results=>{
-  console.log("movies and books", {
-  movies: results.movies,
-  books: results.books
-});
-.catch(error=>{
-  console.log("Error",error);
+console.log("movies OR books", {
+  results
 });
 });
 
 getBooksOrMoviesAsync()
-.then(results=>{
-  console.log("movies or books", {
-  results
-});
-.catch(error=>{
-  console.log("Error",error);
+console.log("movies and books", {
+  movies: results.movies,
+  books: results.books
 });
 });
