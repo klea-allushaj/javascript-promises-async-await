@@ -41,3 +41,18 @@ export async function asyncFetchBooks(){
     console.log(error);
   }
 }
+
+getBooksAndMoviesAsync()
+.then(results=>{
+  console.log("movies and books", {
+  movies: results.movies,
+  books: results.books
+});
+});
+
+getBooksAndMoviesAsync()
+.then(results=>{
+  console.log("movies or books", {
+  results,
+});
+});
