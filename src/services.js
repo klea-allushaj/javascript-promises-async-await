@@ -17,3 +17,15 @@ export function fetchBooks(){
   .catch(error=>console.log(error));
 
 }
+
+export async function asyncFetchMovies(){
+  try{
+  const response=await fetch("./data/mpvies.json");
+  const results=await response.json();
+  return results;
+
+  }
+  catch(error){
+    console.log(error);
+  }
+}
