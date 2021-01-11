@@ -48,11 +48,17 @@ getBooksAndMoviesAsync()
   movies: results.movies,
   books: results.books
 });
+.catch(error=>{
+  console.log("Error",error);
+});
 });
 
 getBooksOrMoviesAsync()
 .then(results=>{
   console.log("movies or books", {
   results
+});
+.catch(error=>{
+  console.log("Error",error);
 });
 });
